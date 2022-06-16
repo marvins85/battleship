@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+/* player 1 controls */
+.player1 {
+  position: absolute;
+  left: 100px;
+  bottom: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player1 div:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+/* container for grids */
+.content {
+  display: flex;
+  gap: 100px;
+  margin-left: 100px;
+}
+
+/* left grid */
+.left {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+/* left grid borders */
+.left div {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* right grid */
+.right {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+/* right grid borders */
+.right div {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.carrierwrap {
+  margin-top: 10px;
+  background: red;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.carrier {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: red;
+}
+
+.battleshipwrap {
+  background: green;
+  margin-bottom: 10px;
+  width: 160px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.battleship {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: green;
+}
+
+.cruiserwrap {
+  background: blue;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.cruiser {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: blue;
+}
+
+.submarinewrap {
+  background: purple;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.submarine {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: purple;
+}
+
+.destroyerwrap {
+  background: yellow;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.destroyer {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: yellow;
+}
+
+.black {
+  background: black;
+  pointer-events: none;
+}
+
+.x {
+  background: lightgrey;
+  pointer-events: none;
+}
+
+.dop {
+  background: red;
+}
+
+.wop {
+  background: yellow;
+}
